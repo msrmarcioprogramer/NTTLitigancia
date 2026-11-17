@@ -92,7 +92,10 @@ export function ComparisonPage() {
         </div>
       </section>
 
-      <div className="row" style={{ justifyContent: 'flex-end' }}>
+      <div className="row comparison-actions" style={{ justifyContent: 'flex-end' }}>
+        <Link className="btn btn-outline" to={`/casos/${caseItem.id}/documentos`}>
+          Abrir processos lado a lado
+        </Link>
         <Link className="btn btn-primary" to={`/casos/${caseItem.id}/parecer`}>
           Registrar parecer
         </Link>

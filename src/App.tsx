@@ -4,6 +4,7 @@ import { LoginPage } from './pages/LoginPage';
 import { CasesProvider } from './state/CasesContext';
 import { CasesListPage } from './pages/CasesListPage';
 import { ComparisonPage } from './pages/ComparisonPage';
+import { ProcessDocumentsPage } from './pages/ProcessDocumentsPage';
 import { DecisionPage } from './pages/DecisionPage';
 import { HistoryPage } from './pages/HistoryPage';
 import { DashboardPage } from './pages/DashboardPage';
@@ -25,6 +26,7 @@ function ProtectedApp() {
           <Route path="/enviar" element={<UploadProcessPage />} />
           <Route path="/casos" element={<CasesListPage />} />
           <Route path="/casos/:id/comparacao" element={<ComparisonPage />} />
+          <Route path="/casos/:id/documentos" element={<ProcessDocumentsPage />} />
           <Route path="/casos/:id/parecer" element={<DecisionPage />} />
           <Route path="/historico" element={<HistoryPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
